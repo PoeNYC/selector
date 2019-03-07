@@ -1,8 +1,12 @@
 import React from 'react';
+import '.app2.css';
 
-var Shape = () +. {
+var Shape = (props) => {
+  var shape = props.shape;
+  var selectShape = props.selectShape
+
   return (
-    <div className = "square"/>
+    <div className = {props.shape} onClick = {() => selectShape (shape)}/>
     )
 }
 
